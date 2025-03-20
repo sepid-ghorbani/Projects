@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-12-25T21:10:42.4614943+03:30</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>F:\Projects_LatestVersion\PrintingProject\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AccessDeniedPage.aspx">
+      <publishTime>11/05/2015 17:13:11</publishTime>
+    </File>
+    <File Include="App_Data/PrintingProject.BusinessLayer.csproj">
+      <publishTime>12/06/2015 00:07:45</publishTime>
+    </File>
+    <File Include="Assemblies/Microsoft.SqlServer.ConnectionInfo.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="Assemblies/Microsoft.SqlServer.Management.Sdk.Sfc.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="Assemblies/Microsoft.SqlServer.Smo.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="Assemblies/Microsoft.SqlServer.SmoExtended.dll">
+      <publishTime>06/29/2012 02:29:06</publishTime>
+    </File>
+    <File Include="Assemblies/Microsoft.SqlServer.SqlEnum.dll">
+      <publishTime>06/28/2012 10:46:48</publishTime>
+    </File>
+    <File Include="BackupManagement.aspx">
+      <publishTime>01/13/2017 19:42:20</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>07/14/2016 11:01:34</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>02/17/2013 00:34:26</publishTime>
+    </File>
+    <File Include="bin/JQControls.dll">
+      <publishTime>04/28/2010 21:44:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.QualityTools.Testing.Fakes.dll">
+      <publishTime>06/28/2015 22:58:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.ConnectionInfo.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Sdk.Sfc.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Smo.dll">
+      <publishTime>06/28/2012 10:46:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SmoExtended.dll">
+      <publishTime>06/29/2012 02:29:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlEnum.dll">
+      <publishTime>06/28/2012 10:46:48</publishTime>
+    </File>
+    <File Include="bin/PrintingProject.dll">
+      <publishTime>05/10/2021 16:31:35</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Windows.Forms.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Xml.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>10/25/2016 15:22:08</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.WebForms.dll">
+      <publishTime>10/25/2016 15:22:18</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>02/19/2013 12:18:28</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>02/19/2013 13:18:28</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>02/19/2013 13:18:28</publishTime>
+    </File>
+    <File Include="BladeTypeManagement.aspx">
+      <publishTime>01/06/2017 20:12:58</publishTime>
+    </File>
+    <File Include="BuyAndPreparingPaperReportManagement.aspx">
+      <publishTime>05/29/2017 02:31:28</publishTime>
+    </File>
+    <File Include="CartexManagement.aspx">
+      <publishTime>03/04/2017 22:58:01</publishTime>
+    </File>
+    <File Include="CartexProductStockReportManagement.aspx">
+      <publishTime>03/05/2017 15:58:35</publishTime>
+    </File>
+    <File Include="CartexReportBaseOnCustomerManagement.aspx">
+      <publishTime>05/12/2017 14:34:30</publishTime>
+    </File>
+    <File Include="CartexReportBaseOnOrderReceiverManagement.aspx">
+      <publishTime>04/28/2021 16:12:14</publishTime>
+    </File>
+    <File Include="ConnectWithUs.aspx">
+      <publishTime>11/05/2015 17:38:52</publishTime>
+    </File>
+    <File Include="cpanel.css">
+      <publishTime>12/30/2016 23:29:19</publishTime>
+    </File>
+    <File Include="CustomersManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/29/2017 00:01:25</publishTime>
+    </File>
+    <File Include="DeliveryReceiversManagement.aspx">
+      <publishTime>02/11/2017 21:27:33</publishTime>
+    </File>
+    <File Include="DimensionsManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="FinalInvoiceManagement.aspx">
+      <publishTime>04/30/2021 16:34:42</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/29/2015 21:07:09</publishTime>
+    </File>
+    <File Include="HistoryManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="Images/1.png">
+      <publishTime>07/19/2013 14:22:16</publishTime>
+    </File>
+    <File Include="Images/2.png">
+      <publishTime>07/19/2013 14:22:16</publishTime>
+    </File>
+    <File Include="Images/419.gif">
+      <publishTime>01/17/2011 20:33:18</publishTime>
+    </File>
+    <File Include="Images/accept.png">
+      <publishTime>08/07/2008 04:54:36</publishTime>
+    </File>
+    <File Include="Images/addcontent.png">
+      <publishTime>04/11/2012 06:49:56</publishTime>
+    </File>
+    <File Include="Images/add_image.png">
+      <publishTime>04/11/2012 06:51:02</publishTime>
+    </File>
+    <File Include="Images/arrow.png">
+      <publishTime>01/19/2011 17:44:56</publishTime>
+    </File>
+    <File Include="Images/arrowlist.png">
+      <publishTime>03/12/2012 02:04:04</publishTime>
+    </File>
+    <File Include="Images/attachment.png">
+      <publishTime>07/27/2013 14:36:28</publishTime>
+    </File>
+    <File Include="Images/back.png">
+      <publishTime>12/04/2015 21:43:18</publishTime>
+    </File>
+    <File Include="Images/backgroundmain.png">
+      <publishTime>11/05/2015 18:24:42</publishTime>
+    </File>
+    <File Include="Images/barcode.png">
+      <publishTime>01/18/2014 11:37:46</publishTime>
+    </File>
+    <File Include="Images/box_22.png">
+      <publishTime>07/15/2013 01:50:36</publishTime>
+    </File>
+    <File Include="Images/box_24.png">
+      <publishTime>07/15/2013 01:54:52</publishTime>
+    </File>
+    <File Include="Images/box_25.png">
+      <publishTime>07/15/2013 01:50:36</publishTime>
+    </File>
+    <File Include="Images/box_29.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_30.png">
+      <publishTime>07/15/2013 01:54:52</publishTime>
+    </File>
+    <File Include="Images/box_32.png">
+      <publishTime>07/15/2013 08:48:32</publishTime>
+    </File>
+    <File Include="Images/box_35.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_36.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_38.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_40.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_42.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_45.png">
+      <publishTime>01/17/2011 09:26:30</publishTime>
+    </File>
+    <File Include="Images/box_48.png">
+      <publishTime>07/15/2013 08:50:20</publishTime>
+    </File>
+    <File Include="Images/box_50.png">
+      <publishTime>07/15/2013 01:55:12</publishTime>
+    </File>
+    <File Include="Images/box_51.png">
+      <publishTime>07/15/2013 08:50:20</publishTime>
+    </File>
+    <File Include="Images/box_52.png">
+      <publishTime>01/17/2011 09:51:30</publishTime>
+    </File>
+    <File Include="Images/cal.gif">
+      <publishTime>09/02/2006 09:02:10</publishTime>
+    </File>
+    <File Include="Images/close.png">
+      <publishTime>08/07/2008 04:53:50</publishTime>
+    </File>
+    <File Include="Images/Connect/full_page.png">
+      <publishTime>02/25/2014 06:52:36</publishTime>
+    </File>
+    <File Include="Images/Connect/mobile_phone.png">
+      <publishTime>02/25/2014 06:53:58</publishTime>
+    </File>
+    <File Include="Images/Connect/search_map.png">
+      <publishTime>02/25/2014 06:54:52</publishTime>
+    </File>
+    <File Include="Images/Connect/telephone.png">
+      <publishTime>02/25/2014 06:51:04</publishTime>
+    </File>
+    <File Include="Images/Connect/yellow_mail.png">
+      <publishTime>02/25/2014 06:51:04</publishTime>
+    </File>
+    <File Include="Images/contentbg.png">
+      <publishTime>11/05/2015 19:13:28</publishTime>
+    </File>
+    <File Include="Images/cpanel_02.png">
+      <publishTime>07/15/2013 01:49:50</publishTime>
+    </File>
+    <File Include="Images/cpanel_03.png">
+      <publishTime>07/15/2013 01:54:12</publishTime>
+    </File>
+    <File Include="Images/cpanel_05.png">
+      <publishTime>07/15/2013 01:49:50</publishTime>
+    </File>
+    <File Include="Images/cpanel_09.png">
+      <publishTime>07/15/2013 01:49:50</publishTime>
+    </File>
+    <File Include="Images/cpanel_10.png">
+      <publishTime>07/15/2013 01:51:40</publishTime>
+    </File>
+    <File Include="Images/cpanel_11.png">
+      <publishTime>07/15/2013 01:51:40</publishTime>
+    </File>
+    <File Include="Images/cpanel_12.png">
+      <publishTime>10/30/2015 16:22:23</publishTime>
+    </File>
+    <File Include="Images/cpanel_13.png">
+      <publishTime>10/30/2015 16:15:25</publishTime>
+    </File>
+    <File Include="Images/cpanel_15.png">
+      <publishTime>10/30/2015 16:10:04</publishTime>
+    </File>
+    <File Include="Images/cpanel_16.png">
+      <publishTime>01/17/2011 07:37:38</publishTime>
+    </File>
+    <File Include="Images/cpanel_18.png">
+      <publishTime>07/15/2013 01:54:52</publishTime>
+    </File>
+    <File Include="Images/cpanel_21.png">
+      <publishTime>10/30/2015 16:23:51</publishTime>
+    </File>
+    <File Include="Images/delete.png">
+      <publishTime>01/05/2012 03:22:28</publishTime>
+    </File>
+    <File Include="Images/delete_page.png">
+      <publishTime>01/11/2014 23:01:50</publishTime>
+    </File>
+    <File Include="Images/dialog_cancel.png">
+      <publishTime>07/21/2013 10:26:16</publishTime>
+    </File>
+    <File Include="Images/edit.png">
+      <publishTime>04/11/2012 06:49:06</publishTime>
+    </File>
+    <File Include="Images/folder_full.png">
+      <publishTime>08/07/2008 04:53:52</publishTime>
+    </File>
+    <File Include="Images/gnome_document_open.png">
+      <publishTime>07/27/2013 11:55:16</publishTime>
+    </File>
+    <File Include="Images/gnome_emblem_documents.png">
+      <publishTime>07/23/2013 10:51:12</publishTime>
+    </File>
+    <File Include="Images/gnome_system_users.png">
+      <publishTime>07/22/2013 12:31:48</publishTime>
+    </File>
+    <File Include="Images/hits.png">
+      <publishTime>07/15/2013 01:55:24</publishTime>
+    </File>
+    <File Include="Images/home.png">
+      <publishTime>09/16/2008 04:00:50</publishTime>
+    </File>
+    <File Include="Images/key.png">
+      <publishTime>01/05/2012 03:22:08</publishTime>
+    </File>
+    <File Include="Images/Logo.png">
+      <publishTime>07/19/2013 14:46:18</publishTime>
+    </File>
+    <File Include="Images/m.png">
+      <publishTime>10/30/2015 15:33:19</publishTime>
+    </File>
+    <File Include="Images/maghaze.png">
+      <publishTime>09/16/2008 04:00:52</publishTime>
+    </File>
+    <File Include="Images/Mail/check_blue.png">
+      <publishTime>02/08/2014 23:11:26</publishTime>
+    </File>
+    <File Include="Images/Mail/check_green.png">
+      <publishTime>02/08/2014 23:10:44</publishTime>
+    </File>
+    <File Include="Images/Mail/mail-open.png">
+      <publishTime>02/08/2014 23:09:08</publishTime>
+    </File>
+    <File Include="Images/Mail/mail_basic.png">
+      <publishTime>02/08/2014 23:09:56</publishTime>
+    </File>
+    <File Include="Images/map-novinideh.jpg">
+      <publishTime>02/25/2014 06:31:56</publishTime>
+    </File>
+    <File Include="Images/menu.png">
+      <publishTime>01/17/2011 20:15:28</publishTime>
+    </File>
+    <File Include="Images/Menu/computer_process.png">
+      <publishTime>01/10/2014 23:14:08</publishTime>
+    </File>
+    <File Include="Images/Menu/edit_page.png">
+      <publishTime>01/10/2014 23:06:42</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/copy_paste.png">
+      <publishTime>01/01/2017 23:32:07</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/finalinvoice.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/letterPress.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/litography.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/paper.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/print-2.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/print.png">
+      <publishTime>12/25/2015 20:59:50</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/sahafi.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/template.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/JobMenu/veneer.png">
+      <publishTime>12/22/2015 15:43:46</publishTime>
+    </File>
+    <File Include="Images/Menu/office_folders.png">
+      <publishTime>01/10/2014 23:22:16</publishTime>
+    </File>
+    <File Include="Images/Menu/report.png">
+      <publishTime>01/10/2014 23:26:32</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/accept_page.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/Backup.png">
+      <publishTime>03/15/2014 13:13:54</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/book_search.png">
+      <publishTime>02/19/2009 09:00:00</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/business_male_female_users.png">
+      <publishTime>08/06/2009 06:20:42</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/business_user.png">
+      <publishTime>07/07/2009 11:44:24</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/chart_pie.png">
+      <publishTime>02/10/2014 04:01:56</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/computer_process.png">
+      <publishTime>05/25/2009 04:11:08</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/cut_from_page.png">
+      <publishTime>09/15/2008 08:00:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/edit_page.png">
+      <publishTime>09/15/2008 08:00:14</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/edit_profile.png">
+      <publishTime>11/09/2015 15:29:40</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/event_warning.png">
+      <publishTime>02/09/2014 03:17:54</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/folder.png">
+      <publishTime>08/06/2008 08:53:02</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/full_page.png">
+      <publishTime>08/06/2008 08:53:02</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/id_card.png">
+      <publishTime>12/24/2008 08:25:50</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/info.png">
+      <publishTime>11/09/2015 22:01:54</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/insert_to_shopping_cart.png">
+      <publishTime>09/15/2008 08:00:16</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/male_users.png">
+      <publishTime>07/07/2009 11:44:08</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/note.png">
+      <publishTime>05/25/2009 04:14:12</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/note_book.png">
+      <publishTime>12/24/2008 09:25:52</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/open_folder_full.png">
+      <publishTime>08/06/2009 05:20:20</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/pages.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/page_process.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/phone_book_edit.png">
+      <publishTime>11/30/2015 21:23:24</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/pin.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/printer_accept.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/process_info.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/promotion.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/ruler.png">
+      <publishTime>02/19/2009 07:59:40</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/ruler_pencil.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/search.png">
+      <publishTime>02/24/2014 23:39:38</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/search_computer.png">
+      <publishTime>03/04/2014 02:09:06</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/search_printer.png">
+      <publishTime>11/30/2015 21:21:10</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/search_user.png">
+      <publishTime>09/15/2008 08:00:20</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/tag_green.png">
+      <publishTime>08/06/2008 08:53:08</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/users.png">
+      <publishTime>08/06/2008 07:53:08</publishTime>
+    </File>
+    <File Include="Images/Menu/Submenu/user_comment.png">
+      <publishTime>11/09/2015 19:06:36</publishTime>
+    </File>
+    <File Include="Images/Menu/tools.png">
+      <publishTime>01/10/2014 23:29:06</publishTime>
+    </File>
+    <File Include="Images/move_waiting_up.png">
+      <publishTime>07/27/2013 11:23:52</publishTime>
+    </File>
+    <File Include="Images/old_clock.png">
+      <publishTime>12/25/2008 05:26:22</publishTime>
+    </File>
+    <File Include="Images/package.png">
+      <publishTime>02/20/2009 05:04:16</publishTime>
+    </File>
+    <File Include="Images/PaintBrushLogo.png">
+      <publishTime>10/30/2015 18:20:00</publishTime>
+    </File>
+    <File Include="Images/printer.png">
+      <publishTime>12/24/2008 09:25:56</publishTime>
+    </File>
+    <File Include="Images/region.png">
+      <publishTime>05/05/2010 01:24:06</publishTime>
+    </File>
+    <File Include="Images/search_page.png">
+      <publishTime>02/24/2014 23:06:48</publishTime>
+    </File>
+    <File Include="Images/search_user.png">
+      <publishTime>11/09/2015 14:05:48</publishTime>
+    </File>
+    <File Include="Images/separator.png">
+      <publishTime>01/18/2011 09:11:54</publishTime>
+    </File>
+    <File Include="Images/shadow.png">
+      <publishTime>01/17/2011 08:48:02</publishTime>
+    </File>
+    <File Include="Images/tabaghe.png">
+      <publishTime>09/16/2008 04:00:44</publishTime>
+    </File>
+    <File Include="Images/takhfif.png">
+      <publishTime>02/20/2009 05:04:24</publishTime>
+    </File>
+    <File Include="Images/task.png">
+      <publishTime>07/27/2013 23:17:26</publishTime>
+    </File>
+    <File Include="Images/tick.png">
+      <publishTime>07/21/2013 10:26:16</publishTime>
+    </File>
+    <File Include="Images/TradeLogo.png">
+      <publishTime>02/26/2014 02:34:06</publishTime>
+    </File>
+    <File Include="Images/trash.png">
+      <publishTime>04/11/2012 06:49:32</publishTime>
+    </File>
+    <File Include="Images/turquoise_button.png">
+      <publishTime>01/12/2014 23:29:28</publishTime>
+    </File>
+    <File Include="Images/txtbox.jpg">
+      <publishTime>11/15/2010 10:37:20</publishTime>
+    </File>
+    <File Include="Images/users.png">
+      <publishTime>07/08/2009 08:47:24</publishTime>
+    </File>
+    <File Include="Images/user_info %281%29.png">
+      <publishTime>07/22/2013 14:45:46</publishTime>
+    </File>
+    <File Include="Images/user_info.png">
+      <publishTime>07/22/2013 12:36:56</publishTime>
+    </File>
+    <File Include="Images/warning.png">
+      <publishTime>08/05/2013 01:11:26</publishTime>
+    </File>
+    <File Include="Images/x_office_calendar.png">
+      <publishTime>07/17/2013 20:38:54</publishTime>
+    </File>
+    <File Include="Images/yellow_mail.png">
+      <publishTime>01/29/2014 05:00:50</publishTime>
+    </File>
+    <File Include="Images/yellow_mail_receive.png">
+      <publishTime>01/29/2014 03:31:38</publishTime>
+    </File>
+    <File Include="Images/yellow_mail_send.png">
+      <publishTime>01/29/2014 03:31:38</publishTime>
+    </File>
+    <File Include="Images/zip_file.png">
+      <publishTime>03/15/2014 10:48:48</publishTime>
+    </File>
+    <File Include="Images/zip_file_accept.png">
+      <publishTime>03/15/2014 10:50:30</publishTime>
+    </File>
+    <File Include="Images/zip_file_download.png">
+      <publishTime>03/15/2014 11:07:02</publishTime>
+    </File>
+    <File Include="Images/zip_file_search.png">
+      <publishTime>03/15/2014 11:07:02</publishTime>
+    </File>
+    <File Include="InstituteManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="InstituteStockToolManagement.aspx">
+      <publishTime>04/30/2021 16:12:11</publishTime>
+    </File>
+    <File Include="JobManagement.aspx">
+      <publishTime>05/01/2021 12:47:51</publishTime>
+    </File>
+    <File Include="JobNamesManagement.aspx">
+      <publishTime>02/11/2017 21:40:27</publishTime>
+    </File>
+    <File Include="JobTypesManagement.aspx">
+      <publishTime>02/11/2017 21:17:55</publishTime>
+    </File>
+    <File Include="LeafCountManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="LetterPressDevicesManagement.aspx">
+      <publishTime>01/06/2017 20:12:44</publishTime>
+    </File>
+    <File Include="LetterPressManagement.aspx">
+      <publishTime>04/30/2021 16:32:06</publishTime>
+    </File>
+    <File Include="LetterPressTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="LitographyManagement.aspx">
+      <publishTime>04/30/2021 16:26:02</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>11/05/2015 18:12:06</publishTime>
+    </File>
+    <File Include="LPIManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="MakingTemplateManagement.aspx">
+      <publishTime>04/30/2021 16:33:04</publishTime>
+    </File>
+    <File Include="MaterialTypeGramazhManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="MaterialTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="OrderReceiversManagement.aspx">
+      <publishTime>02/11/2017 23:24:38</publishTime>
+    </File>
+    <File Include="PaperHeightManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="PaperManagement.aspx">
+      <publishTime>04/30/2021 16:30:43</publishTime>
+    </File>
+    <File Include="PaperWidthManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="PermissionManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="PrimaryStockManagement.aspx">
+      <publishTime>04/30/2021 16:36:23</publishTime>
+    </File>
+    <File Include="PrintingManagement.aspx">
+      <publishTime>05/06/2021 22:18:05</publishTime>
+    </File>
+    <File Include="PrintModelsManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="PrintPreviewPage.aspx">
+      <publishTime>01/01/2017 12:57:28</publishTime>
+    </File>
+    <File Include="PrintTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="ProductDeliveryManagement.aspx">
+      <publishTime>04/30/2021 16:36:40</publishTime>
+    </File>
+    <File Include="ProductionOrderManagement.aspx">
+      <publishTime>04/30/2021 16:36:45</publishTime>
+    </File>
+    <File Include="ReportBaseOnCustomerManagement.aspx">
+      <publishTime>01/01/2017 17:39:35</publishTime>
+    </File>
+    <File Include="ReportBaseOnOrderReceiverManagement.aspx">
+      <publishTime>04/28/2021 15:57:01</publishTime>
+    </File>
+    <File Include="ReportPreviewPage.aspx">
+      <publishTime>05/28/2017 22:45:27</publishTime>
+    </File>
+    <File Include="SahafiManagement.aspx">
+      <publishTime>05/09/2021 14:42:27</publishTime>
+    </File>
+    <File Include="SahafiTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>10/29/2015 21:07:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>10/29/2015 21:07:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>10/29/2015 21:07:09</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>05/20/2017 22:09:10</publishTime>
+    </File>
+    <File Include="StatusesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="StereotypeUsagesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="StockReportManagement.aspx">
+      <publishTime>01/01/2017 13:21:10</publishTime>
+    </File>
+    <File Include="TemplateMaterialTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:45</publishTime>
+    </File>
+    <File Include="UsePaperReportManagement.aspx">
+      <publishTime>09/12/2017 19:05:34</publishTime>
+    </File>
+    <File Include="UserManagement.aspx">
+      <publishTime>01/06/2017 20:12:46</publishTime>
+    </File>
+    <File Include="VeneerManagement.aspx">
+      <publishTime>04/30/2021 16:31:16</publishTime>
+    </File>
+    <File Include="VeneerTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/24/2021 14:28:43</publishTime>
+    </File>
+    <File Include="ZinkTypesManagement.aspx">
+      <publishTime>01/06/2017 20:12:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

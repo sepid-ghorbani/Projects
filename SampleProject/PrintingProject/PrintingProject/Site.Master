@@ -1,0 +1,319 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PrintingProject.SiteMaster" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+     <style type="text/css">
+        .pagination span {
+            padding: 5px;
+            background-color: #ccc;
+            font-weight: Bold;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="cpanel.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="body" onkeydown = "return (event.keyCode!=13)">
+    <form id="form1" runat="server">
+        <div id="Main">
+            <div id="Welcome">
+                <div style="float: right">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="Images/cpanel_05.png" />
+                </div>
+                <div id="Welcometext">
+                    <asp:Label ID="lblwelcome" runat="server" Text="Label"></asp:Label>
+                </div>
+                <div style="float: right">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="Images/cpanel_02.png" />
+                </div>
+            </div>
+            <div id="Header">
+                <div id="logo">
+                    <br />
+                    <br />
+                    <br />
+                    <div dir="ltr" style="color: #F62459; font-size: 14px; font-weight: bolder; text-shadow: 0 0 0.2em white, 0 0 0.2em white,0 0 0.2em white">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; سیستم جامع اتوماسیون چاپخانه
+                    </div>
+                </div>
+                <div id="TopMenu">
+                    <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="Images/cpanel_09.png"></asp:HyperLink><asp:ImageButton
+                        ID="imgbtnSignout" runat="server" ImageUrl="Images/cpanel_10.png" OnClick="imgbtnSignout_Click" /><asp:ImageButton
+                            ID="imgbtnconnect" runat="server" ImageUrl="Images/cpanel_11.png" OnClick="imgbtnconnect_Click" /><asp:ImageButton
+                                ID="imgbtnHome" runat="server" ImageUrl="Images/cpanel_12.png" OnClick="imgbtnHome_Click" /><asp:HyperLink
+                                    ID="HyperLink5" runat="server" ImageUrl="Images/cpanel_13.png"></asp:HyperLink>
+                </div>
+            </div>
+            <div style="clear: both">
+                <asp:Image ID="Image3" runat="server" ImageUrl="Images/cpanel_15.png" />
+            </div>
+            <div style="clear: both">
+            </div>
+            <div id="MainContent">
+                <div id="MenuRight">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                    <table width="100%">
+                        <tr id="trmanagementpic" runat="server">
+                            <td style="width: 30px">
+                                <img src="Images/Menu/computer_process.png" />
+                            </td>
+                            <td>مدیریت
+                            </td>
+                        </tr>
+                        <tr id="trmanagementdl" runat="server">
+                            <td colspan="2">
+                                <asp:DataList runat="server" ID="dlManagementPages" Width="80%" CellPadding="3" BackColor="White"
+                                    BorderColor="Black" BorderStyle="Ridge" BorderWidth="1px" GridLines="Horizontal">
+                                    <AlternatingItemStyle BackColor="#F7F7F7" />
+                                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                    <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                                    <ItemTemplate>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgIcon" runat="server" ImageUrl='<%# Eval("Icon") %>' />
+                                                </td>
+                                                <td>
+                                                    <asp:HyperLink ID="hyperlinkPage" runat="server" NavigateUrl='<%# Eval("Path") %>'
+                                                        Text='<%# Eval("Name") %>' />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ItemTemplate>
+                                    <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                </asp:DataList>
+                            </td>
+                        </tr>
+                        <tr id="trentermaininfopic" runat="server">
+                            <td style="width: 30px">
+                                <img src="Images/Menu/office_folders.png" />
+                            </td>
+                            <td>ورود اطلاعات اصلی
+                            </td>
+                        </tr>
+                        <tr id="trentermaininfodl" runat="server">
+                            <td colspan="2">
+                                <asp:DataList runat="server" ID="dlEnterMainInfoPages" Width="80%" CellPadding="3"
+                                    BackColor="White" BorderColor="Black" BorderStyle="Ridge" BorderWidth="1px" GridLines="Horizontal">
+                                    <AlternatingItemStyle BackColor="#F7F7F7" />
+                                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                    <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                                    <ItemTemplate>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgIcon" runat="server" ImageUrl='<%# Eval("Icon") %>' />
+                                                </td>
+                                                <td>
+                                                    <asp:HyperLink ID="hyperlinkPage" runat="server" NavigateUrl='<%# Eval("Path") %>'
+                                                        Text='<%# Eval("Name") %>' />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ItemTemplate>
+                                    <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                </asp:DataList>
+                            </td>
+                        </tr>
+                        <tr id="trtoolspic" runat="server">
+                            <td style="width: 30px">
+                                <img src="Images/Menu/tools.png" />
+                            </td>
+                            <td>ابزارها
+                            </td>
+                        </tr>
+                        <tr id="trtoolsdl" runat="server">
+                            <td colspan="2">
+                                <asp:DataList runat="server" ID="dlToolsPages" Width="80%" CellPadding="3" BackColor="White"
+                                    BorderColor="Black" BorderStyle="Ridge" BorderWidth="1px" GridLines="Horizontal">
+                                    <AlternatingItemStyle BackColor="#F7F7F7" />
+                                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                    <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                                    <ItemTemplate>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgIcon" runat="server" ImageUrl='<%# Eval("Icon") %>' />
+                                                </td>
+                                                <td>
+                                                    <asp:HyperLink ID="hyperlinkPage" runat="server" NavigateUrl='<%# Eval("Path") %>'
+                                                        Text='<%# Eval("Name") %>' />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ItemTemplate>
+                                    <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                </asp:DataList>
+                            </td>
+                        </tr>
+                        <tr id="trreportpic" runat="server">
+                            <td style="width: 30px">
+                                <img src="Images/Menu/report.png" />
+                            </td>
+                            <td>گزارشات
+                            </td>
+                        </tr>
+                        <tr id="trreportdl" runat="server">
+                            <td colspan="2">
+                                <asp:DataList runat="server" ID="dlReportsPages" Width="80%" CellPadding="3" BackColor="White"
+                                    BorderColor="Black" BorderStyle="Ridge" BorderWidth="1px" GridLines="Horizontal">
+                                    <AlternatingItemStyle BackColor="#F7F7F7" />
+                                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                    <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                                    <ItemTemplate>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgIcon" runat="server" ImageUrl='<%# Eval("Icon") %>' />
+                                                </td>
+                                                <td>
+                                                    <asp:HyperLink ID="hyperlinkPage" runat="server" NavigateUrl='<%# Eval("Path") %>'
+                                                        Text='<%# Eval("Name") %>' />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ItemTemplate>
+                                    <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                </asp:DataList>
+                            </td>
+                        </tr>
+                        <tr id="trenterbaseinfopic" runat="server">
+                            <td style="width: 30px">
+                                <img src="Images/Menu/edit_page.png" />
+                            </td>
+                            <td>ورود اطلاعات پایه
+                            </td>
+                        </tr>
+                        <tr id="trenterbaseinfodl" runat="server">
+                            <td colspan="2">
+                                <asp:DataList runat="server" ID="dlEnterBaseInfoPages" Width="80%" CellPadding="3"
+                                    BackColor="White" BorderColor="Black" BorderStyle="Ridge" BorderWidth="1px" GridLines="Horizontal">
+                                    <AlternatingItemStyle BackColor="#F7F7F7" />
+                                    <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                    <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                                    <ItemTemplate>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgIcon" runat="server" ImageUrl='<%# Eval("Icon") %>' />
+                                                </td>
+                                                <td>
+                                                    <asp:HyperLink ID="hyperlinkPage" runat="server" NavigateUrl='<%# Eval("Path") %>'
+                                                        Text='<%# Eval("Name") %>' />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ItemTemplate>
+                                    <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                                </asp:DataList>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div id="Content">
+                    <%-- <div id="Map">
+                    <div style="float: right">
+                        <asp:Image ID="Image6" runat="server" ImageUrl="Images/box_25.png" /></div>
+                    <div style="float: right; padding-top: 5px;">
+                        
+                    </div>
+                    <div style="float: left">
+                        <asp:Image ID="Image5" runat="server" ImageUrl="Images/box_22.png" /></div>
+                </div>--%>
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                     <script language="javascript" type="text/javascript">
+                        debugger;
+                        var loadingPanel = "";
+                        var pageRequestManager = Sys.WebForms.PageRequestManager.getInstance();
+                        var postBackElement = "";
+                        pageRequestManager.add_initializeRequest(initializeRequest);
+                        pageRequestManager.add_endRequest(endRequest);
+
+                        function initializeRequest(sender, eventArgs) {
+                            debugger;
+                            loadingPanel = $find("RadAjaxLoadingPanel1");
+                            postBackElement = eventArgs.get_postBackElement().id;
+                            loadingPanel.show(postBackElement);
+                        }
+
+                        function endRequest(sender, eventArgs) {
+                            debugger;
+                            loadingPanel = $find("RadAjaxLoadingPanel1");
+                            loadingPanel.hide(postBackElement);                        }
+
+                    </script>
+                    <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server">
+                        <img alt="Loading..." src='<%= RadAjaxLoadingPanel.GetWebResourceUrl(Page, "Telerik.Web.UI.Skins.Default.Ajax.loading.gif") %>'
+                            style="border: 0;" />
+                    </telerik:RadAjaxLoadingPanel>
+
+                   
+                    <br />
+
+                    <asp:UpdatePanel runat="server" ID="upall" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                   
+                </div>
+            </div>
+            <div style="clear: both">
+                <asp:Image ID="Image4" runat="server" ImageUrl="Images/cpanel_21.png" />
+            </div>
+            <div id="copyright">
+                <div dir="rtl" style="color: #F62459; font-size: 12px; font-weight: bolder; text-shadow: 0 0 0.2em white, 0 0 0.2em white,0 0 0.2em white">
+                    :: کلیه حقوق این سامانه متعلق به شرکت فیروز تجارت می باشد.
+                </div>
+            </div>
+            <script type="text/javascript">
+
+                function OnClientUpdated(sender, args) {
+                    var message = "Update (check) was done!";
+                    var newMsgs = sender.get_value();
+                    if (newMsgs != 0) {
+                        sender.show();
+                        message += (newMsgs == 1) ? (" There is 1 new message!") : (" There are " + newMsgs + " new messages!");
+                    }
+                    else {
+                        message += " There are no new messages!";
+                    }
+                    // logEvent(message);
+                }
+
+            </script>
+            <%-- <telerik:RadNotification ID="notification" runat="server" Width="300" Animation="Fade"
+            LoadContentOn="TimeInterval" EnableRoundedCorners="true" EnableShadow="true"
+            OnClientUpdated="OnClientUpdated" Title="هشدارهای دریافت شده" OffsetX="-20" OffsetY="-20"
+            TitleIcon="none" UpdateInterval="10000" OnCallbackUpdate="OnCallbackUpdateAlert"
+            Skin="Office2010Blue">
+            <ContentTemplate>
+                <asp:HyperLink ID="hylAlert" runat="server" NavigateUrl="~/showAlerts.aspx"></asp:HyperLink>
+            </ContentTemplate>
+        </telerik:RadNotification>
+        <telerik:RadNotification ID="notificationMessage" runat="server" Width="300" Animation="Fade"
+            LoadContentOn="TimeInterval" EnableRoundedCorners="true" EnableShadow="true"
+            OnClientUpdated="OnClientUpdated" Title="پیام های دریافت شده" OffsetX="-20" OffsetY="-20"
+            TitleIcon="none" UpdateInterval="10000" OnCallbackUpdate="OnCallbackUpdateMessage"
+            Skin="Office2010Blue">
+            <ContentTemplate>
+                <asp:HyperLink ID="hylMessage" runat="server" NavigateUrl="~/MessageManagement.aspx"></asp:HyperLink>
+            </ContentTemplate>
+        </telerik:RadNotification>--%>
+        </div>
+    </form>
+</body>
+</html>

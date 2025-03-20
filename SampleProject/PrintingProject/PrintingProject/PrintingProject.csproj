@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{460636EF-7AC4-4269-A76D-BBED9C56E672}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrintingProject</RootNamespace>
+    <AssemblyName>PrintingProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>C:\Users\Adak\Desktop\DotNet4\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\Trade\Trade\Trade\Trade\TradeProject\TradeProject\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="JQControls">
+      <HintPath>..\..\..\Trade\Trade\Trade\Trade\TradeProject\TradeProject\bin\JQControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Reporting, Version=10.2.16.1025, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Reporting R3 2016\Bin\Telerik.Reporting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=10.2.16.1025, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Reporting R3 2016\Bin\Telerik.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Design, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SEPID\PrintingProject\PrintingProject\PrintingProject\bin\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SEPID\PrintingProject\PrintingProject\PrintingProject\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SEPID\PrintingProject\PrintingProject\PrintingProject\bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDeniedPage.aspx" />
+    <Content Include="App_Data\PrintingProject.BusinessLayer.csproj" />
+    <Content Include="Assemblies\Microsoft.SqlServer.ConnectionInfo.dll" />
+    <Content Include="Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll" />
+    <Content Include="Assemblies\Microsoft.SqlServer.Smo.dll" />
+    <Content Include="Assemblies\Microsoft.SqlServer.SmoExtended.dll" />
+    <Content Include="Assemblies\Microsoft.SqlServer.SqlEnum.dll" />
+    <Content Include="BackupManagement.aspx" />
+    <Content Include="BladeTypeManagement.aspx" />
+    <Content Include="UsePaperReportManagement.aspx" />
+    <Content Include="BuyAndPreparingPaperReportManagement.aspx" />
+    <Content Include="ConnectWithUs.aspx" />
+    <Content Include="DeliveryReceiversManagement.aspx" />
+    <Content Include="CartexManagement.aspx" />
+    <Content Include="JobTypesManagement.aspx" />
+    <Content Include="HistoryManagement.aspx" />
+    <Content Include="Images\Menu\JobMenu\copy_paste.png" />
+    <Content Include="Images\Menu\JobMenu\print-2.png" />
+    <Content Include="Images\Menu\Submenu\book_search.png" />
+    <Content Include="Images\Menu\Submenu\business_male_female_users.png" />
+    <Content Include="Images\Menu\Submenu\insert_to_shopping_cart.png" />
+    <Content Include="Images\Menu\Submenu\note.png" />
+    <Content Include="Images\Menu\Submenu\search_user.png" />
+    <Content Include="Images\Menu\Submenu\tag_green.png" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Resources\Dastor Kar A5.jpg" />
+    <Content Include="Images\PaintBrushLogo.png" />
+    <Content Include="Images\printer.png" />
+    <Content Include="JobNamesManagement.aspx" />
+    <Content Include="ReportPreviewPage.aspx" />
+    <Content Include="ProductDeliveryManagement.aspx" />
+    <Content Include="ProductionOrderManagement.aspx" />
+    <Content Include="PrimaryStockManagement.aspx" />
+    <Content Include="PrintPreviewPage.aspx" />
+    <Content Include="CartexReportBaseOnCustomerManagement.aspx" />
+    <Content Include="CartexReportBaseOnOrderReceiverManagement.aspx" />
+    <Content Include="CartexProductStockReportManagement.aspx" />
+    <Content Include="StockReportManagement.aspx" />
+    <Content Include="ReportBaseOnOrderReceiverManagement.aspx" />
+    <Content Include="ReportBaseOnCustomerManagement.aspx" />
+    <Content Include="InstituteStockToolManagement.aspx" />
+    <Content Include="FinalInvoiceManagement.aspx" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\Menu\JobMenu\finalinvoice.png" />
+    <Content Include="SahafiManagement.aspx" />
+    <Content Include="MakingTemplateManagement.aspx" />
+    <Content Include="LetterPressManagement.aspx" />
+    <Content Include="VeneerManagement.aspx" />
+    <Content Include="PaperManagement.aspx" />
+    <Content Include="PrintingManagement.aspx" />
+    <Content Include="LitographyManagement.aspx" />
+    <Content Include="Images\Menu\JobMenu\letterPress.png" />
+    <Content Include="Images\Menu\JobMenu\litography.png" />
+    <Content Include="Images\Menu\JobMenu\paper.png" />
+    <Content Include="Images\Menu\JobMenu\print.png" />
+    <Content Include="Images\Menu\JobMenu\sahafi.png" />
+    <Content Include="Images\Menu\JobMenu\template.png" />
+    <Content Include="Images\Menu\JobMenu\veneer.png" />
+    <Content Include="Images\Menu\Submenu\folder.png" />
+    <Content Include="JobManagement.aspx" />
+    <Content Include="DimensionsManagement.aspx" />
+    <Content Include="Images\Menu\Submenu\accept_page.png" />
+    <Content Include="Images\Menu\Submenu\Backup.png" />
+    <Content Include="Images\Menu\Submenu\business_user.png" />
+    <Content Include="Images\Menu\Submenu\chart_pie.png" />
+    <Content Include="Images\Menu\Submenu\computer_process.png" />
+    <Content Include="Images\Menu\Submenu\cut_from_page.png" />
+    <Content Include="Images\Menu\Submenu\edit_page.png" />
+    <Content Include="Images\Menu\Submenu\edit_profile.png" />
+    <Content Include="Images\Menu\Submenu\event_warning.png" />
+    <Content Include="Images\Menu\Submenu\full_page.png" />
+    <Content Include="Images\Menu\Submenu\id_card.png" />
+    <Content Include="Images\Menu\Submenu\info.png" />
+    <Content Include="Images\Menu\Submenu\male_users.png" />
+    <Content Include="Images\Menu\Submenu\note_book.png" />
+    <Content Include="Images\Menu\Submenu\open_folder_full.png" />
+    <Content Include="Images\Menu\Submenu\pages.png" />
+    <Content Include="Images\Menu\Submenu\page_process.png" />
+    <Content Include="Images\Menu\Submenu\phone_book_edit.png" />
+    <Content Include="Images\Menu\Submenu\pin.png" />
+    <Content Include="Images\Menu\Submenu\printer_accept.png" />
+    <Content Include="Images\Menu\Submenu\process_info.png" />
+    <Content Include="Images\Menu\Submenu\promotion.png" />
+    <Content Include="Images\Menu\Submenu\ruler.png" />
+    <Content Include="Images\Menu\Submenu\ruler_pencil.png" />
+    <Content Include="Images\Menu\Submenu\search.png" />
+    <Content Include="Images\Menu\Submenu\search_computer.png" />
+    <Content Include="Images\Menu\Submenu\search_printer.png" />
+    <Content Include="Images\Menu\Submenu\users.png" />
+    <Content Include="Images\Menu\Submenu\user_comment.png" />
+    <Content Include="InstituteManagement.aspx" />
+    <Content Include="LeafCountManagement.aspx" />
+    <Content Include="LetterPressDevicesManagement.aspx" />
+    <Content Include="LetterPressTypesManagement.aspx" />
+    <Content Include="LPIManagement.aspx" />
+    <Content Include="MaterialTypeGramazhManagement.aspx" />
+    <Content Include="MaterialTypesManagement.aspx" />
+    <Content Include="OrderReceiversManagement.aspx" />
+    <Content Include="PaperHeightManagement.aspx" />
+    <Content Include="PaperWidthManagement.aspx" />
+    <Content Include="PrintModelsManagement.aspx" />
+    <Content Include="PrintTypesManagement.aspx" />
+    <Content Include="SahafiTypesManagement.aspx" />
+    <Content Include="StatusesManagement.aspx" />
+    <Content Include="CustomersManagement.aspx" />
+    <Content Include="cpanel.css" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\419.gif" />
+    <Content Include="Images\accept.png" />
+    <Content Include="Images\addcontent.png" />
+    <Content Include="Images\add_image.png" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\arrowlist.png" />
+    <Content Include="Images\attachment.png" />
+    <Content Include="Images\backgroundmain.png" />
+    <Content Include="Images\barcode.png" />
+    <Content Include="Images\box_22.png" />
+    <Content Include="Images\box_24.png" />
+    <Content Include="Images\box_25.png" />
+    <Content Include="Images\box_29.png" />
+    <Content Include="Images\box_30.png" />
+    <Content Include="Images\box_32.png" />
+    <Content Include="Images\box_35.png" />
+    <Content Include="Images\box_36.png" />
+    <Content Include="Images\box_38.png" />
+    <Content Include="Images\box_40.png" />
+    <Content Include="Images\box_42.png" />
+    <Content Include="Images\box_45.png" />
+    <Content Include="Images\box_48.png" />
+    <Content Include="Images\box_50.png" />
+    <Content Include="Images\box_51.png" />
+    <Content Include="Images\box_52.png" />
+    <Content Include="Images\cal.gif" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\Connect\full_page.png" />
+    <Content Include="Images\Connect\mobile_phone.png" />
+    <Content Include="Images\Connect\search_map.png" />
+    <Content Include="Images\Connect\telephone.png" />
+    <Content Include="Images\Connect\yellow_mail.png" />
+    <Content Include="Images\contentbg.png" />
+    <Content Include="Images\cpanel_02.png" />
+    <Content Include="Images\cpanel_03.png" />
+    <Content Include="Images\cpanel_05.png" />
+    <Content Include="Images\cpanel_09.png" />
+    <Content Include="Images\cpanel_10.png" />
+    <Content Include="Images\cpanel_11.png" />
+    <Content Include="Images\cpanel_12.png" />
+    <Content Include="Images\cpanel_13.png" />
+    <Content Include="Images\cpanel_15.png" />
+    <Content Include="Images\cpanel_16.png" />
+    <Content Include="Images\cpanel_18.png" />
+    <Content Include="Images\cpanel_21.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\delete_page.png" />
+    <Content Include="Images\dialog_cancel.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\folder_full.png" />
+    <Content Include="Images\gnome_document_open.png" />
+    <Content Include="Images\gnome_emblem_documents.png" />
+    <Content Include="Images\gnome_system_users.png" />
+    <Content Include="Images\hits.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\key.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\m.png" />
+    <Content Include="Images\maghaze.png" />
+    <Content Include="Images\Mail\check_blue.png" />
+    <Content Include="Images\Mail\check_green.png" />
+    <Content Include="Images\Mail\mail-open.png" />
+    <Content Include="Images\Mail\mail_basic.png" />
+    <Content Include="Images\map-novinideh.jpg" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\Menu\computer_process.png" />
+    <Content Include="Images\Menu\edit_page.png" />
+    <Content Include="Images\Menu\office_folders.png" />
+    <Content Include="Images\Menu\report.png" />
+    <Content Include="Images\Menu\tools.png" />
+    <Content Include="Images\move_waiting_up.png" />
+    <Content Include="Images\old_clock.png" />
+    <Content Include="Images\package.png" />
+    <Content Include="Images\region.png" />
+    <Content Include="Images\search_page.png" />
+    <Content Include="Images\search_user.png" />
+    <Content Include="Images\separator.png" />
+    <Content Include="Images\shadow.png" />
+    <Content Include="Images\tabaghe.png" />
+    <Content Include="Images\takhfif.png" />
+    <Content Include="Images\task.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\TradeLogo.png" />
+    <Content Include="Images\trash.png" />
+    <Content Include="Images\turquoise_button.png" />
+    <Content Include="Images\txtbox.jpg" />
+    <Content Include="Images\users.png" />
+    <Content Include="Images\user_info %281%29.png" />
+    <Content Include="Images\user_info.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="Images\x_office_calendar.png" />
+    <Content Include="Images\yellow_mail.png" />
+    <Content Include="Images\yellow_mail_receive.png" />
+    <Content Include="Images\yellow_mail_send.png" />
+    <Content Include="Images\zip_file.png" />
+    <Content Include="Images\zip_file_accept.png" />
+    <Content Include="Images\zip_file_download.png" />
+    <Content Include="Images\zip_file_search.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="PermissionManagement.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="StereotypeUsagesManagement.aspx" />
+    <Content Include="TemplateMaterialTypesManagement.aspx" />
+    <Content Include="UserManagement.aspx" />
+    <Content Include="VeneerTypesManagement.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="ZinkTypesManagement.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDeniedPage.aspx.cs">
+      <DependentUpon>AccessDeniedPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDeniedPage.aspx.designer.cs">
+      <DependentUpon>AccessDeniedPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Alerts.cs" />
+    <Compile Include="App_Data\AlertsFactory.cs" />
+    <Compile Include="App_Data\AlertsKeys.cs" />
+    <Compile Include="App_Data\Cartexes.cs" />
+    <Compile Include="App_Data\CartexesFactory.cs" />
+    <Compile Include="App_Data\CartexesKeys.cs" />
+    <Compile Include="App_Data\DataLayer\CartexesSql.cs" />
+    <Compile Include="App_Data\DataLayer\DeliveryReceiversSql.cs" />
+    <Compile Include="App_Data\DataLayer\FinalInvoiceSql.cs" />
+    <Compile Include="App_Data\DataLayer\JobNamesSql.cs" />
+    <Compile Include="App_Data\DataLayer\JobTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\PrimaryStockSql.cs" />
+    <Compile Include="App_Data\DataLayer\ProductDeliverySql.cs" />
+    <Compile Include="App_Data\DataLayer\ProductionOrderSql.cs" />
+    <Compile Include="App_Data\DataLayer\StockSql.cs" />
+    <Compile Include="App_Data\DeliveryReceivers.cs" />
+    <Compile Include="App_Data\DeliveryReceiversFactory.cs" />
+    <Compile Include="App_Data\DeliveryReceiversKeys.cs" />
+    <Compile Include="App_Data\FinalInvoice.cs" />
+    <Compile Include="App_Data\FinalInvoiceFactory.cs" />
+    <Compile Include="App_Data\FinalInvoiceKeys.cs" />
+    <Compile Include="App_Data\JobNames.cs" />
+    <Compile Include="App_Data\JobNamesFactory.cs" />
+    <Compile Include="App_Data\JobNamesKeys.cs" />
+    <Compile Include="App_Data\JobTypes.cs" />
+    <Compile Include="App_Data\JobTypesFactory.cs" />
+    <Compile Include="App_Data\JobTypesKeys.cs" />
+    <Compile Include="App_Data\PersianDateCal.cs" />
+    <Compile Include="App_Data\BladeTypes.cs" />
+    <Compile Include="App_Data\BladeTypesFactory.cs" />
+    <Compile Include="App_Data\BladeTypesKeys.cs" />
+    <Compile Include="App_Data\BusinessObjectBase.cs" />
+    <Compile Include="App_Data\BuyPaper.cs" />
+    <Compile Include="App_Data\BuyPaperFactory.cs" />
+    <Compile Include="App_Data\BuyPaperKeys.cs" />
+    <Compile Include="App_Data\CopyZinks.cs" />
+    <Compile Include="App_Data\CopyZinksFactory.cs" />
+    <Compile Include="App_Data\CopyZinksKeys.cs" />
+    <Compile Include="App_Data\Customers.cs" />
+    <Compile Include="App_Data\CustomersFactory.cs" />
+    <Compile Include="App_Data\CustomersKeys.cs" />
+    <Compile Include="App_Data\DataLayer\AlertsSql.cs" />
+    <Compile Include="App_Data\DataLayer\BladeTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\BuyPaperSql.cs" />
+    <Compile Include="App_Data\DataLayer\CopyZinksSql.cs" />
+    <Compile Include="App_Data\DataLayer\CustomersSql.cs" />
+    <Compile Include="App_Data\DataLayer\DataLayerBase.cs" />
+    <Compile Include="App_Data\DataLayer\DesignersSql.cs" />
+    <Compile Include="App_Data\DataLayer\DesignsSql.cs" />
+    <Compile Include="App_Data\DataLayer\DimensionsSql.cs" />
+    <Compile Include="App_Data\DataLayer\ExportColorsSql.cs" />
+    <Compile Include="App_Data\DataLayer\FilmsSql.cs" />
+    <Compile Include="App_Data\DataLayer\InstituteSql.cs" />
+    <Compile Include="App_Data\DataLayer\JobsSql.cs" />
+    <Compile Include="App_Data\DataLayer\JobStatusesSql.cs" />
+    <Compile Include="App_Data\DataLayer\LeafCountSql.cs" />
+    <Compile Include="App_Data\DataLayer\LetterPressDevicesSql.cs" />
+    <Compile Include="App_Data\DataLayer\LetterPressesSql.cs" />
+    <Compile Include="App_Data\DataLayer\LetterPressTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\LevelOrderReceiverSql.cs" />
+    <Compile Include="App_Data\DataLayer\LevelsSql.cs" />
+    <Compile Include="App_Data\DataLayer\LogInOutHistoriesSql.cs" />
+    <Compile Include="App_Data\DataLayer\LPISql.cs" />
+    <Compile Include="App_Data\DataLayer\MainColorCountSql.cs" />
+    <Compile Include="App_Data\DataLayer\MakingTemplatesSql.cs" />
+    <Compile Include="App_Data\DataLayer\MaterialTypeGramazhSql.cs" />
+    <Compile Include="App_Data\DataLayer\MaterialTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\MessagesSql.cs" />
+    <Compile Include="App_Data\DataLayer\OperationHistoriesSql.cs" />
+    <Compile Include="App_Data\DataLayer\OrderReceiversSql.cs" />
+    <Compile Include="App_Data\DataLayer\PagesSql.cs" />
+    <Compile Include="App_Data\DataLayer\PaperHeightSql.cs" />
+    <Compile Include="App_Data\DataLayer\PaperTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\PaperWidthSql.cs" />
+    <Compile Include="App_Data\DataLayer\PlatesSql.cs" />
+    <Compile Include="App_Data\DataLayer\PreparingPaperSql.cs" />
+    <Compile Include="App_Data\DataLayer\PrintingsSql.cs" />
+    <Compile Include="App_Data\DataLayer\PrintModelsSql.cs" />
+    <Compile Include="App_Data\DataLayer\PrintTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\RePrintSql.cs" />
+    <Compile Include="App_Data\DataLayer\SahafiesSql.cs" />
+    <Compile Include="App_Data\DataLayer\SahafiTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\StatusesSql.cs" />
+    <Compile Include="App_Data\DataLayer\StereotypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\StereotypeUsagesSql.cs" />
+    <Compile Include="App_Data\DataLayer\TemplateMaterialTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\UsePaperSql.cs" />
+    <Compile Include="App_Data\DataLayer\UserPageSql.cs" />
+    <Compile Include="App_Data\DataLayer\UsersSql.cs" />
+    <Compile Include="App_Data\DataLayer\VeneersSql.cs" />
+    <Compile Include="App_Data\DataLayer\VeneerTypesSql.cs" />
+    <Compile Include="App_Data\DataLayer\ZinksSql.cs" />
+    <Compile Include="App_Data\DataLayer\ZinkTypesSql.cs" />
+    <Compile Include="App_Data\Designers.cs" />
+    <Compile Include="App_Data\DesignersFactory.cs" />
+    <Compile Include="App_Data\DesignersKeys.cs" />
+    <Compile Include="App_Data\Designs.cs" />
+    <Compile Include="App_Data\DesignsFactory.cs" />
+    <Compile Include="App_Data\DesignsKeys.cs" />
+    <Compile Include="App_Data\Dimensions.cs" />
+    <Compile Include="App_Data\DimensionsFactory.cs" />
+    <Compile Include="App_Data\DimensionsKeys.cs" />
+    <Compile Include="App_Data\ExportColors.cs" />
+    <Compile Include="App_Data\ExportColorsFactory.cs" />
+    <Compile Include="App_Data\ExportColorsKeys.cs" />
+    <Compile Include="App_Data\Films.cs" />
+    <Compile Include="App_Data\FilmsFactory.cs" />
+    <Compile Include="App_Data\FilmsKeys.cs" />
+    <Compile Include="App_Data\Institute.cs" />
+    <Compile Include="App_Data\InstituteFactory.cs" />
+    <Compile Include="App_Data\InstituteKeys.cs" />
+    <Compile Include="App_Data\InvalidBusinessObjectException.cs" />
+    <Compile Include="App_Data\Jobs.cs" />
+    <Compile Include="App_Data\JobsFactory.cs" />
+    <Compile Include="App_Data\JobsKeys.cs" />
+    <Compile Include="App_Data\JobStatuses.cs" />
+    <Compile Include="App_Data\JobStatusesFactory.cs" />
+    <Compile Include="App_Data\JobStatusesKeys.cs" />
+    <Compile Include="App_Data\LeafCount.cs" />
+    <Compile Include="App_Data\LeafCountFactory.cs" />
+    <Compile Include="App_Data\LeafCountKeys.cs" />
+    <Compile Include="App_Data\LetterPressDevices.cs" />
+    <Compile Include="App_Data\LetterPressDevicesFactory.cs" />
+    <Compile Include="App_Data\LetterPressDevicesKeys.cs" />
+    <Compile Include="App_Data\LetterPresses.cs" />
+    <Compile Include="App_Data\LetterPressesFactory.cs" />
+    <Compile Include="App_Data\LetterPressesKeys.cs" />
+    <Compile Include="App_Data\LetterPressTypes.cs" />
+    <Compile Include="App_Data\LetterPressTypesFactory.cs" />
+    <Compile Include="App_Data\LetterPressTypesKeys.cs" />
+    <Compile Include="App_Data\LevelOrderReceiver.cs" />
+    <Compile Include="App_Data\LevelOrderReceiverFactory.cs" />
+    <Compile Include="App_Data\LevelOrderReceiverKeys.cs" />
+    <Compile Include="App_Data\Levels.cs" />
+    <Compile Include="App_Data\LevelsFactory.cs" />
+    <Compile Include="App_Data\LevelsKeys.cs" />
+    <Compile Include="App_Data\LogInOutHistories.cs" />
+    <Compile Include="App_Data\LogInOutHistoriesFactory.cs" />
+    <Compile Include="App_Data\LogInOutHistoriesKeys.cs" />
+    <Compile Include="App_Data\LPI.cs" />
+    <Compile Include="App_Data\LPIFactory.cs" />
+    <Compile Include="App_Data\LPIKeys.cs" />
+    <Compile Include="App_Data\MainColorCount.cs" />
+    <Compile Include="App_Data\MainColorCountFactory.cs" />
+    <Compile Include="App_Data\MainColorCountKeys.cs" />
+    <Compile Include="App_Data\MakingTemplates.cs" />
+    <Compile Include="App_Data\MakingTemplatesFactory.cs" />
+    <Compile Include="App_Data\MakingTemplatesKeys.cs" />
+    <Compile Include="App_Data\MaterialTypeGramazh.cs" />
+    <Compile Include="App_Data\MaterialTypeGramazhFactory.cs" />
+    <Compile Include="App_Data\MaterialTypeGramazhKeys.cs" />
+    <Compile Include="App_Data\MaterialTypes.cs" />
+    <Compile Include="App_Data\MaterialTypesFactory.cs" />
+    <Compile Include="App_Data\MaterialTypesKeys.cs" />
+    <Compile Include="App_Data\Messages.cs" />
+    <Compile Include="App_Data\MessagesFactory.cs" />
+    <Compile Include="App_Data\MessagesKeys.cs" />
+    <Compile Include="App_Data\OperationHistories.cs" />
+    <Compile Include="App_Data\OperationHistoriesFactory.cs" />
+    <Compile Include="App_Data\OperationHistoriesKeys.cs" />
+    <Compile Include="App_Data\OrderReceivers.cs" />
+    <Compile Include="App_Data\OrderReceiversFactory.cs" />
+    <Compile Include="App_Data\OrderReceiversKeys.cs" />
+    <Compile Include="App_Data\Pages.cs" />
+    <Compile Include="App_Data\PagesFactory.cs" />
+    <Compile Include="App_Data\PagesKeys.cs" />
+    <Compile Include="App_Data\PaperHeight.cs" />
+    <Compile Include="App_Data\PaperHeightFactory.cs" />
+    <Compile Include="App_Data\PaperHeightKeys.cs" />
+    <Compile Include="App_Data\PaperTypes.cs" />
+    <Compile Include="App_Data\PaperTypesFactory.cs" />
+    <Compile Include="App_Data\PaperTypesKeys.cs" />
+    <Compile Include="App_Data\PaperWidth.cs" />
+    <Compile Include="App_Data\PaperWidthFactory.cs" />
+    <Compile Include="App_Data\PaperWidthKeys.cs" />
+    <Compile Include="App_Data\Plates.cs" />
+    <Compile Include="App_Data\PlatesFactory.cs" />
+    <Compile Include="App_Data\PlatesKeys.cs" />
+    <Compile Include="App_Data\PreparingPaper.cs" />
+    <Compile Include="App_Data\PreparingPaperFactory.cs" />
+    <Compile Include="App_Data\PreparingPaperKeys.cs" />
+    <Compile Include="App_Data\PrimaryStock.cs" />
+    <Compile Include="App_Data\PrimaryStockFactory.cs" />
+    <Compile Include="App_Data\PrimaryStockKeys.cs" />
+    <Compile Include="App_Data\Printings.cs" />
+    <Compile Include="App_Data\PrintingsFactory.cs" />
+    <Compile Include="App_Data\PrintingsKeys.cs" />
+    <Compile Include="App_Data\PrintModels.cs" />
+    <Compile Include="App_Data\PrintModelsFactory.cs" />
+    <Compile Include="App_Data\PrintModelsKeys.cs" />
+    <Compile Include="App_Data\PrintTypes.cs" />
+    <Compile Include="App_Data\PrintTypesFactory.cs" />
+    <Compile Include="App_Data\PrintTypesKeys.cs" />
+    <Compile Include="App_Data\ProductDelivery.cs" />
+    <Compile Include="App_Data\ProductDeliveryFactory.cs" />
+    <Compile Include="App_Data\ProductDeliveryKeys.cs" />
+    <Compile Include="App_Data\ProductionOrder.cs" />
+    <Compile Include="App_Data\ProductionOrderFactory.cs" />
+    <Compile Include="App_Data\ProductionOrderKeys.cs" />
+    <Compile Include="App_Data\Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Data\RePrint.cs" />
+    <Compile Include="App_Data\RePrintFactory.cs" />
+    <Compile Include="App_Data\RePrintKeys.cs" />
+    <Compile Include="App_Data\Sahafies.cs" />
+    <Compile Include="App_Data\SahafiesFactory.cs" />
+    <Compile Include="App_Data\SahafiesKeys.cs" />
+    <Compile Include="App_Data\SahafiTypes.cs" />
+    <Compile Include="App_Data\SahafiTypesFactory.cs" />
+    <Compile Include="App_Data\SahafiTypesKeys.cs" />
+    <Compile Include="App_Data\Statuses.cs" />
+    <Compile Include="App_Data\StatusesFactory.cs" />
+    <Compile Include="App_Data\StatusesKeys.cs" />
+    <Compile Include="App_Data\Stereotypes.cs" />
+    <Compile Include="App_Data\StereotypesFactory.cs" />
+    <Compile Include="App_Data\StereotypesKeys.cs" />
+    <Compile Include="App_Data\StereotypeUsages.cs" />
+    <Compile Include="App_Data\StereotypeUsagesFactory.cs" />
+    <Compile Include="App_Data\StereotypeUsagesKeys.cs" />
+    <Compile Include="App_Data\Stock.cs" />
+    <Compile Include="App_Data\StockFactory.cs" />
+    <Compile Include="App_Data\StockKeys.cs" />
+    <Compile Include="App_Data\TemplateMaterialTypes.cs" />
+    <Compile Include="App_Data\TemplateMaterialTypesFactory.cs" />
+    <Compile Include="App_Data\TemplateMaterialTypesKeys.cs" />
+    <Compile Include="App_Data\UsePaper.cs" />
+    <Compile Include="App_Data\UsePaperFactory.cs" />
+    <Compile Include="App_Data\UsePaperKeys.cs" />
+    <Compile Include="App_Data\UserPage.cs" />
+    <Compile Include="App_Data\UserPageFactory.cs" />
+    <Compile Include="App_Data\UserPageKeys.cs" />
+    <Compile Include="App_Data\Users.cs" />
+    <Compile Include="App_Data\UsersFactory.cs" />
+    <Compile Include="App_Data\UsersKeys.cs" />
+    <Compile Include="App_Data\Validation\BrokenRule.cs" />
+    <Compile Include="App_Data\Validation\BrokenRulesList.cs" />
+    <Compile Include="App_Data\Validation\ValidateRuleBase.cs" />
+    <Compile Include="App_Data\Validation\ValidateRuleNotNull.cs" />
+    <Compile Include="App_Data\Validation\ValidateRuleRegexMatching.cs" />
+    <Compile Include="App_Data\Validation\ValidateRuleStringMaxLength.cs" />
+    <Compile Include="App_Data\Validation\ValidateRuleStringRequired.cs" />
+    <Compile Include="App_Data\Validation\ValidationRules.cs" />
+    <Compile Include="App_Data\Veneers.cs" />
+    <Compile Include="App_Data\VeneersFactory.cs" />
+    <Compile Include="App_Data\VeneersKeys.cs" />
+    <Compile Include="App_Data\VeneerTypes.cs" />
+    <Compile Include="App_Data\VeneerTypesFactory.cs" />
+    <Compile Include="App_Data\VeneerTypesKeys.cs" />
+    <Compile Include="App_Data\Zinks.cs" />
+    <Compile Include="App_Data\ZinksFactory.cs" />
+    <Compile Include="App_Data\ZinksKeys.cs" />
+    <Compile Include="App_Data\ZinkTypes.cs" />
+    <Compile Include="App_Data\ZinkTypesFactory.cs" />
+    <Compile Include="App_Data\ZinkTypesKeys.cs" />
+    <Compile Include="BackupManagement.aspx.cs">
+      <DependentUpon>BackupManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackupManagement.aspx.designer.cs">
+      <DependentUpon>BackupManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BladeTypeManagement.aspx.cs">
+      <DependentUpon>BladeTypeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BladeTypeManagement.aspx.designer.cs">
+      <DependentUpon>BladeTypeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UsePaperGeneralReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UsePaperGeneralReport.Designer.cs">
+      <DependentUpon>UsePaperGeneralReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsePaperReportManagement.aspx.cs">
+      <DependentUpon>UsePaperReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsePaperReportManagement.aspx.designer.cs">
+      <DependentUpon>UsePaperReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuyAndPreparingPaperReportManagement.aspx.cs">
+      <DependentUpon>BuyAndPreparingPaperReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuyAndPreparingPaperReportManagement.aspx.designer.cs">
+      <DependentUpon>BuyAndPreparingPaperReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectWithUs.aspx.cs">
+      <DependentUpon>ConnectWithUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConnectWithUs.aspx.designer.cs">
+      <DependentUpon>ConnectWithUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryReceiversManagement.aspx.cs">
+      <DependentUpon>DeliveryReceiversManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryReceiversManagement.aspx.designer.cs">
+      <DependentUpon>DeliveryReceiversManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartexManagement.aspx.cs">
+      <DependentUpon>CartexManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartexManagement.aspx.designer.cs">
+      <DependentUpon>CartexManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobTypesManagement.aspx.cs">
+      <DependentUpon>JobTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobTypesManagement.aspx.designer.cs">
+      <DependentUpon>JobTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryManagement.aspx.cs">
+      <DependentUpon>HistoryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoryManagement.aspx.designer.cs">
+      <DependentUpon>HistoryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobNamesManagement.aspx.cs">
+      <DependentUpon>JobNamesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobNamesManagement.aspx.designer.cs">
+      <DependentUpon>JobNamesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPreviewPage.aspx.cs">
+      <DependentUpon>ReportPreviewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPreviewPage.aspx.designer.cs">
+      <DependentUpon>ReportPreviewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDeliveryManagement.aspx.cs">
+      <DependentUpon>ProductDeliveryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDeliveryManagement.aspx.designer.cs">
+      <DependentUpon>ProductDeliveryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionOrderManagement.aspx.cs">
+      <DependentUpon>ProductionOrderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductionOrderManagement.aspx.designer.cs">
+      <DependentUpon>ProductionOrderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrimaryStockManagement.aspx.cs">
+      <DependentUpon>PrimaryStockManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimaryStockManagement.aspx.designer.cs">
+      <DependentUpon>PrimaryStockManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreviewPage.aspx.cs">
+      <DependentUpon>PrintPreviewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintPreviewPage.aspx.designer.cs">
+      <DependentUpon>PrintPreviewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CartexReportBaseOnCustomerManagement.aspx.cs">
+      <DependentUpon>CartexReportBaseOnCustomerManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartexReportBaseOnCustomerManagement.aspx.designer.cs">
+      <DependentUpon>CartexReportBaseOnCustomerManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartexReportBaseOnOrderReceiverManagement.aspx.cs">
+      <DependentUpon>CartexReportBaseOnOrderReceiverManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartexReportBaseOnOrderReceiverManagement.aspx.designer.cs">
+      <DependentUpon>CartexReportBaseOnOrderReceiverManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BuyAndPreparingPaperReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BuyAndPreparingPaperReport.Designer.cs">
+      <DependentUpon>BuyAndPreparingPaperReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductDeliveryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductDeliveryReport.Designer.cs">
+      <DependentUpon>ProductDeliveryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BuyPaperReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BuyPaperReport.Designer.cs">
+      <DependentUpon>BuyPaperReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CartexReportBaseOnOrderReceiver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CartexReportBaseOnOrderReceiver.Designer.cs">
+      <DependentUpon>CartexReportBaseOnOrderReceiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FinalInvoiceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FinalInvoiceReport.Designer.cs">
+      <DependentUpon>FinalInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CartexReportBaseOnCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CartexReportBaseOnCustomer.Designer.cs">
+      <DependentUpon>CartexReportBaseOnCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PrimaryStockReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PrimaryStockReport.Designer.cs">
+      <DependentUpon>PrimaryStockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SahafiReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SahafiReport.Designer.cs">
+      <DependentUpon>SahafiReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MakingTemplateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MakingTemplateReport.Designer.cs">
+      <DependentUpon>MakingTemplateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LetterPressReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LetterPressReport.Designer.cs">
+      <DependentUpon>LetterPressReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CartexProductStockReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CartexProductStockReport.Designer.cs">
+      <DependentUpon>CartexProductStockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductionOrderReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductionOrderReport.Designer.cs">
+      <DependentUpon>ProductionOrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VeneerReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\VeneerReport.Designer.cs">
+      <DependentUpon>VeneerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UsePaperReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UsePaperReport.Designer.cs">
+      <DependentUpon>UsePaperReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PreparingPaperReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PreparingPaperReport.Designer.cs">
+      <DependentUpon>PreparingPaperReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PrintingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PrintingReport.Designer.cs">
+      <DependentUpon>PrintingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StereotypeReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StereotypeReport.Designer.cs">
+      <DependentUpon>StereotypeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CopyZinkReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CopyZinkReport.Designer.cs">
+      <DependentUpon>CopyZinkReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FilmReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FilmReport.Designer.cs">
+      <DependentUpon>FilmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PlateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PlateReport.Designer.cs">
+      <DependentUpon>PlateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartexProductStockReportManagement.aspx.cs">
+      <DependentUpon>CartexProductStockReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartexProductStockReportManagement.aspx.designer.cs">
+      <DependentUpon>CartexProductStockReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockReportManagement.aspx.cs">
+      <DependentUpon>StockReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockReportManagement.aspx.designer.cs">
+      <DependentUpon>StockReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBaseOnOrderReceiverManagement.aspx.cs">
+      <DependentUpon>ReportBaseOnOrderReceiverManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportBaseOnOrderReceiverManagement.aspx.designer.cs">
+      <DependentUpon>ReportBaseOnOrderReceiverManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBaseOnCustomerManagement.aspx.cs">
+      <DependentUpon>ReportBaseOnCustomerManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportBaseOnCustomerManagement.aspx.designer.cs">
+      <DependentUpon>ReportBaseOnCustomerManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstituteStockToolManagement.aspx.cs">
+      <DependentUpon>InstituteStockToolManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstituteStockToolManagement.aspx.designer.cs">
+      <DependentUpon>InstituteStockToolManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinalInvoiceManagement.aspx.cs">
+      <DependentUpon>FinalInvoiceManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinalInvoiceManagement.aspx.designer.cs">
+      <DependentUpon>FinalInvoiceManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StockReportByInstitute.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StockReportByInstitute.Designer.cs">
+      <DependentUpon>StockReportByInstitute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportBaseOnOrderReceiver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportBaseOnOrderReceiver.Designer.cs">
+      <DependentUpon>ReportBaseOnOrderReceiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportBaseOnCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportBaseOnCustomer.Designer.cs">
+      <DependentUpon>ReportBaseOnCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SahafiManagement.aspx.cs">
+      <DependentUpon>SahafiManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SahafiManagement.aspx.designer.cs">
+      <DependentUpon>SahafiManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakingTemplateManagement.aspx.cs">
+      <DependentUpon>MakingTemplateManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakingTemplateManagement.aspx.designer.cs">
+      <DependentUpon>MakingTemplateManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LetterPressManagement.aspx.cs">
+      <DependentUpon>LetterPressManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LetterPressManagement.aspx.designer.cs">
+      <DependentUpon>LetterPressManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VeneerManagement.aspx.cs">
+      <DependentUpon>VeneerManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VeneerManagement.aspx.designer.cs">
+      <DependentUpon>VeneerManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperManagement.aspx.cs">
+      <DependentUpon>PaperManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperManagement.aspx.designer.cs">
+      <DependentUpon>PaperManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingManagement.aspx.cs">
+      <DependentUpon>PrintingManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintingManagement.aspx.designer.cs">
+      <DependentUpon>PrintingManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LitographyManagement.aspx.cs">
+      <DependentUpon>LitographyManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LitographyManagement.aspx.designer.cs">
+      <DependentUpon>LitographyManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobManagement.aspx.cs">
+      <DependentUpon>JobManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobManagement.aspx.designer.cs">
+      <DependentUpon>JobManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionsManagement.aspx.cs">
+      <DependentUpon>DimensionsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DimensionsManagement.aspx.designer.cs">
+      <DependentUpon>DimensionsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstituteManagement.aspx.cs">
+      <DependentUpon>InstituteManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstituteManagement.aspx.designer.cs">
+      <DependentUpon>InstituteManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeafCountManagement.aspx.cs">
+      <DependentUpon>LeafCountManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeafCountManagement.aspx.designer.cs">
+      <DependentUpon>LeafCountManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LetterPressDevicesManagement.aspx.cs">
+      <DependentUpon>LetterPressDevicesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LetterPressDevicesManagement.aspx.designer.cs">
+      <DependentUpon>LetterPressDevicesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LetterPressTypesManagement.aspx.cs">
+      <DependentUpon>LetterPressTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LetterPressTypesManagement.aspx.designer.cs">
+      <DependentUpon>LetterPressTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LPIManagement.aspx.cs">
+      <DependentUpon>LPIManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LPIManagement.aspx.designer.cs">
+      <DependentUpon>LPIManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialTypeGramazhManagement.aspx.cs">
+      <DependentUpon>MaterialTypeGramazhManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialTypeGramazhManagement.aspx.designer.cs">
+      <DependentUpon>MaterialTypeGramazhManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialTypesManagement.aspx.cs">
+      <DependentUpon>MaterialTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialTypesManagement.aspx.designer.cs">
+      <DependentUpon>MaterialTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderReceiversManagement.aspx.cs">
+      <DependentUpon>OrderReceiversManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderReceiversManagement.aspx.designer.cs">
+      <DependentUpon>OrderReceiversManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperHeightManagement.aspx.cs">
+      <DependentUpon>PaperHeightManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperHeightManagement.aspx.designer.cs">
+      <DependentUpon>PaperHeightManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaperWidthManagement.aspx.cs">
+      <DependentUpon>PaperWidthManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaperWidthManagement.aspx.designer.cs">
+      <DependentUpon>PaperWidthManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintModelsManagement.aspx.cs">
+      <DependentUpon>PrintModelsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintModelsManagement.aspx.designer.cs">
+      <DependentUpon>PrintModelsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintTypesManagement.aspx.cs">
+      <DependentUpon>PrintTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintTypesManagement.aspx.designer.cs">
+      <DependentUpon>PrintTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SahafiTypesManagement.aspx.cs">
+      <DependentUpon>SahafiTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SahafiTypesManagement.aspx.designer.cs">
+      <DependentUpon>SahafiTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusesManagement.aspx.cs">
+      <DependentUpon>StatusesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatusesManagement.aspx.designer.cs">
+      <DependentUpon>StatusesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersManagement.aspx.cs">
+      <DependentUpon>CustomersManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomersManagement.aspx.designer.cs">
+      <DependentUpon>CustomersManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionManagement.aspx.cs">
+      <DependentUpon>PermissionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionManagement.aspx.designer.cs">
+      <DependentUpon>PermissionManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StereotypeUsagesManagement.aspx.cs">
+      <DependentUpon>StereotypeUsagesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StereotypeUsagesManagement.aspx.designer.cs">
+      <DependentUpon>StereotypeUsagesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateMaterialTypesManagement.aspx.cs">
+      <DependentUpon>TemplateMaterialTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateMaterialTypesManagement.aspx.designer.cs">
+      <DependentUpon>TemplateMaterialTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VeneerTypesManagement.aspx.cs">
+      <DependentUpon>VeneerTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VeneerTypesManagement.aspx.designer.cs">
+      <DependentUpon>VeneerTypesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZinkTypesManagement.aspx.cs">
+      <DependentUpon>ZinkTypesManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZinkTypesManagement.aspx.designer.cs">
+      <DependentUpon>ZinkTypesManagement.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Backups\" />
+    <Folder Include="Restores\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UsePaperGeneralReport.resx">
+      <DependentUpon>UsePaperGeneralReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BuyAndPreparingPaperReport.resx">
+      <DependentUpon>BuyAndPreparingPaperReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductDeliveryReport.resx">
+      <DependentUpon>ProductDeliveryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BuyPaperReport.resx">
+      <DependentUpon>BuyPaperReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CartexReportBaseOnOrderReceiver.resx">
+      <DependentUpon>CartexReportBaseOnOrderReceiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FinalInvoiceReport.resx">
+      <DependentUpon>FinalInvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CartexReportBaseOnCustomer.resx">
+      <DependentUpon>CartexReportBaseOnCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrimaryStockReport.resx">
+      <DependentUpon>PrimaryStockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SahafiReport.resx">
+      <DependentUpon>SahafiReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MakingTemplateReport.resx">
+      <DependentUpon>MakingTemplateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LetterPressReport.resx">
+      <DependentUpon>LetterPressReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CartexProductStockReport.resx">
+      <DependentUpon>CartexProductStockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductionOrderReport.resx">
+      <DependentUpon>ProductionOrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VeneerReport.resx">
+      <DependentUpon>VeneerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UsePaperReport.resx">
+      <DependentUpon>UsePaperReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PreparingPaperReport.resx">
+      <DependentUpon>PreparingPaperReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrintingReport.resx">
+      <DependentUpon>PrintingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StereotypeReport.resx">
+      <DependentUpon>StereotypeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CopyZinkReport.resx">
+      <DependentUpon>CopyZinkReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FilmReport.resx">
+      <DependentUpon>FilmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PlateReport.resx">
+      <DependentUpon>PlateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockReportByInstitute.resx">
+      <DependentUpon>StockReportByInstitute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportBaseOnOrderReceiver.resx">
+      <DependentUpon>ReportBaseOnOrderReceiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportBaseOnCustomer.resx">
+      <DependentUpon>ReportBaseOnCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4313</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

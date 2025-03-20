@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\PrintingProject\\PrintingProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{460636EF-7AC4-4269-A76D-BBED9C56E672}|PrintingProject\\PrintingProject.csproj|g:\\printingproject\\printingproject\\printingproject\\templatematerialtypesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{460636EF-7AC4-4269-A76D-BBED9C56E672}|PrintingProject\\PrintingProject.csproj|solutionrelative:printingproject\\templatematerialtypesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TemplateMaterialTypesManagement.aspx",
+              "DocumentMoniker": "G:\\PrintingProject\\PrintingProject\\PrintingProject\\TemplateMaterialTypesManagement.aspx",
+              "RelativeDocumentMoniker": "PrintingProject\\TemplateMaterialTypesManagement.aspx",
+              "ToolTip": "G:\\PrintingProject\\PrintingProject\\PrintingProject\\TemplateMaterialTypesManagement.aspx",
+              "RelativeToolTip": "PrintingProject\\TemplateMaterialTypesManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-03T18:24:10.328Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
